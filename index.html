@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+  <title>Calculadora JS</title>
+  <link rel="stylesheet" href="assets/css/estilo.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/images/android-chrome-512x512.png">
+  <link rel="manifest" href="assets/images/site.webmanifest">
+</head>
+<body>
+  <header>
+    <!-- header container -->
+    <section class="header-container">
+      <article class="header-container__logo">
+        <a href="#"><h1>Calculadora <i class="fab fa-js-square"></i></h1></a>
+      </article>
+      <nav class="header-container__nav">
+          <a href="https://github.com/machadofguilherme" target="_blank">
+              <i class="fab fa-github"></i>
+          </a>
+      </nav>
+    </section>
+  </header>
+  <!-- end header container -->
+  <!-- main container -->
+  <main>
+    <section class="main-container">
+      <!-- display -->
+      <article class="main-container__display">
+        <div class="main-container__display-value">
+          <div id="showValue1"></div>
+          <div id="showOperator"></div>
+          <div id="showValue2"></div>
+        </div>
+        <div id="showResult"></div>
+      </article>
+      <!-- end display -->
+      <!-- sequence buttons -->
+      <article class="main-container__btn">
+        <div class="main-container__field1">
+          <button class="main-container__btnFunctions" id="btn7">7</button>
+          <button class="main-container__btnFunctions" id="btn8">8</button>
+          <button class="main-container__btnFunctions" id="btn9">9</button>
+          <button class="main-container__btnFunctions" id="btnDivide"><i class="fas fa-divide"></i></button>
+        </div>
+        <div class="main-container__field2">
+          <button class="main-container__btnFunctions" id="btn4">4</button>
+          <button class="main-container__btnFunctions" id="btn5">5</button>
+          <button class="main-container__btnFunctions" id="btn6">6</button>
+          <button class="main-container__btnFunctions" id="btnMult"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="main-container__field3">
+          <button class="main-container__btnFunctions" id="btn1">1</button>
+          <button class="main-container__btnFunctions" id="btn2">2</button>
+          <button class="main-container__btnFunctions" id="btn3">3</button>
+          <button class="main-container__btnFunctions" id="btnSub"><i class="fas fa-minus"></i></button>
+        </div>
+        <div class="main-container__field4">
+          <button class="main-container__btnFunctions" id="btnClear">L</button>
+          <button class="main-container__btnFunctions" id="btn0">0</button>
+          <button class="main-container__btnFunctions" id="btnEqual"><i class="fas fa-equals"></i></button>
+          <button class="main-container__btnFunctions" id="btnMore"><i class="fas fa-plus"></i></button>
+        </div> 
+      </article>
+      <!-- end sequence buttons -->
+    </section>
+  </main>
+  <!-- footer -->
+  <footer>
+    <section class="footer-container">
+      <p>Desenvolvido por: <strong>Guilherme Machado</strong></p>
+      <span id="year"></span>
+    </section>
+  </footer>
+  <!-- end footer -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

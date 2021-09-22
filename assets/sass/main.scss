@@ -1,0 +1,85 @@
+main {
+    height: 22rem;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+
+        .main-container {
+            width: 25em;
+            height: 19rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+.main-container__display {
+    width: 100%;
+    height: 7rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: $thirty-color;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+        .main-container__display-value {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            height: 3rem;
+            padding: 1rem;
+            gap: .2rem;
+        }
+    }
+
+
+#showValue1,
+#showOperator,
+#showValue1 {
+    font-size: 1rem;
+}
+
+#showOperator {
+    font-weight: bold;
+}
+
+#showResult {
+    width: 100%;
+    height: 6rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: .5rem;
+    padding-right: 1rem;
+}
+
+.main-container__btn {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-top: .5rem;
+    margin-right: .5rem;
+    width: 100%;
+
+}
+
+.main-container__btnFunctions {
+    width: 6.05rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: $background-color;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primary-color;
+    transition: .3s ease-out;
+        &:hover {
+            filter: brightness(80%);
+        }
+}
+
+.main-container__field1, .main-container__field2,
+.main-container__field3, .main-container__field4 {
+    padding-top: .1rem;
+}
